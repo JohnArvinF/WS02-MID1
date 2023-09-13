@@ -75,8 +75,8 @@ header img{
 img.big-image{
 
 border-radius:110;
-width: 1000px; \
-height: 18px;
+width: 1000px; 
+height: 500px;
 box-shadow: 0 0 0px rgb(238, 230, 230);
 
 
@@ -103,21 +103,52 @@ p.caption
 
 }
 
+.hako  {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center; }
 
-ul{
+.hako li {
+	display: inline-block;
+	margin-right: 50px;
+	text-align: center; 
+	
+}
+
+a img {
+	width: 200px;
+	height: auto;
+	border-radius: 50%;
+	border: 5px solid #93ABCF;
+	display: block; 
+	margin: 0 auto; 
+	transition: transform 0.3s, border 0.3s, background 0.3s;
+	
+}
+
+a {
+color: #2fa9ce;
+font-family: , sans-serif;
+text-decoration: rgb(84, 110, 110);
+}
+
+
+a:hover img {
+	transform: scale(1.1);
+	z-index: -1;
+	border: 3px  #eeedf0; 
+	box-shadow: 0 0 10px #e7a33e;
+
+}
+
+ul,li {
 	
 	list-style: none;
-	border: 1px solid #f8f2f2;
 	border-radius: 8px;
-	color: #EEF0EB ;
+	color: #ebebeb ;
 }
 
-a{
-	
-color: #a15e11  ;
-text-decoration: none;
-
-}
 
 footer{
 	margin-top: 10px;
