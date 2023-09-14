@@ -18,13 +18,24 @@ header{
 }
 
 h1{
-
+	border-radius: 12px;
 	font-size: 50px;
 	color: #a15e11;
 	flex-grow: 1px;
+	transition: transform 0.3s, z-index 0.3s, border 0.3s, box-shadow 0.3s;
+	
+}
+	h1:hover {
+		transform: scale(1.1);
+		z-index: 1;
+		
+		border: 1px solid #aa8176; 
+		box-shadow: 0 0 10px #e7a33e;
+		
+	}
 	
 
-}
+
 
 
 h2{
@@ -74,7 +85,7 @@ header img{
 
 img.big-image{
 
-border-radius:110;
+border-radius:10px;
 width: 1000px; 
 height: 500px;
 box-shadow: 0 0 0px rgb(238, 230, 230);
@@ -103,43 +114,42 @@ p.caption
 
 }
 
-.hako  {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	text-align: center; }
+.hako {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
 .hako li {
-	display: inline-block;
-	margin-right: 50px;
-	text-align: center; 
-	
+    display: inline-block;
+    margin-right: 20px; /* Adjust the margin to control the spacing */
+    text-align: center;
 }
 
 a img {
-	width: 200px;
-	height: auto;
-	border-radius: 50%;
-	border: 5px solid #93ABCF;
-	display: block; 
-	margin: 0 auto; 
-	transition: transform 0.3s, border 0.3s, background 0.3s;
-	
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #93ABCF;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.9s, border 0.3s, background 0.3s;
 }
 
 a {
-color: #2fa9ce;
-font-family: , sans-serif;
-text-decoration: rgb(84, 110, 110);
+    color: #2fa9ce;
+    font-family: sans-serif; /* Corrected the font-family syntax */
+    text-decoration: none; /* Removed redundant color property */
+	
+
 }
 
-
 a:hover img {
-	transform: scale(1.1);
-	z-index: -1;
-	border: 3px  #eeedf0; 
-	box-shadow: 0 0 10px #e7a33e;
-
+    transform: scale(1.1);
+    z-index: -1;
+    border: 3px solid #eeedf0; /* Corrected the border syntax */
+    box-shadow: 0 0 10px #e7a33e;
 }
 
 ul,li {
